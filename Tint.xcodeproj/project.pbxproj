@@ -16,6 +16,7 @@
 		DCB6A4181F45A553003D37EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB6A4161F45A553003D37EF /* Main.storyboard */; };
 		DCB6A4231F45A553003D37EF /* TintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4221F45A553003D37EF /* TintTests.swift */; };
 		DCB6A42E1F45A553003D37EF /* TintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A42D1F45A553003D37EF /* TintUITests.swift */; };
+		DCDE8C481F50135F003C842A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE8C471F50135F003C842A /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DCB6A4291F45A553003D37EF /* TintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB6A42D1F45A553003D37EF /* TintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintUITests.swift; sourceTree = "<group>"; };
 		DCB6A42F1F45A553003D37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDE8C471F50135F003C842A /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DCB2408E1F4FFE910077511E /* RGBView.swift */,
 				DCB240901F4FFEA20077511E /* CMYKView.swift */,
 				DCB240921F4FFEF60077511E /* HSBView.swift */,
+				DCDE8C471F50135F003C842A /* Notifications.swift */,
 				DCB6A4141F45A553003D37EF /* Assets.xcassets */,
 				DCB6A4161F45A553003D37EF /* Main.storyboard */,
 				DCB6A4191F45A553003D37EF /* Info.plist */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE8C481F50135F003C842A /* Notifications.swift in Sources */,
 				DCB240911F4FFEA20077511E /* CMYKView.swift in Sources */,
 				DCB2408F1F4FFE910077511E /* RGBView.swift in Sources */,
 				DCB6A4131F45A553003D37EF /* ViewController.swift in Sources */,
