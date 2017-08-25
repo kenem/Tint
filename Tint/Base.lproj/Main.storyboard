@@ -685,130 +685,136 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIh-wJ-I7R">
-                                <rect key="frame" x="20" y="233" width="86" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="RGB" id="DiL-L8-ilx">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" red="0.32459945480028785" green="0.66599583625793457" blue="0.27207693457603455" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctK-Yi-d65">
-                                <rect key="frame" x="20" y="193" width="96" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="nCP-yf-66b"/>
+                            <view wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-Qm-pp5" customClass="RGBView" customModule="Tint" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wC-FT-fHq">
+                                        <rect key="frame" x="20" y="233" width="86" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="RGB" id="Gcb-0B-E2t">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="0.32459945480000002" green="0.66599583630000003" blue="0.27207693459999999" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paL-2l-03H">
+                                        <rect key="frame" x="20" y="193" width="96" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="rMU-4z-wMh"/>
+                                        <connections>
+                                            <action selector="sliderActionWithSender:" target="ItW-Qm-pp5" id="i0O-Qz-1ER"/>
+                                        </connections>
+                                    </slider>
+                                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tE8-uR-ZsL">
+                                        <rect key="frame" x="20" y="161" width="96" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="E4s-1X-NMz"/>
+                                        <connections>
+                                            <action selector="sliderActionWithSender:" target="ItW-Qm-pp5" id="aua-Hb-Os9"/>
+                                        </connections>
+                                    </slider>
+                                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfd-ax-gSN">
+                                        <rect key="frame" x="20" y="129" width="96" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="Y3E-JA-d8w"/>
+                                        <connections>
+                                            <action selector="sliderActionWithSender:" target="ItW-Qm-pp5" id="OQT-dd-tQb"/>
+                                        </connections>
+                                    </slider>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJu-St-c8L">
+                                        <rect key="frame" x="122" y="192" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Eit-ys-1wU">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="rHv-6l-VwU"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="7DO-fC-Q57"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW1-8X-TK9">
+                                        <rect key="frame" x="122" y="160" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="0cO-vA-K00">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="ejI-fq-lbP"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="UQV-I4-6BY"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXA-PR-4SZ">
+                                        <rect key="frame" x="122" y="128" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="VXz-xQ-jkE">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="8wV-ZD-8EO"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="ued-Zq-C6g"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrq-GG-ow2">
+                                        <rect key="frame" x="173" y="192" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="y4P-5T-Htx">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="xot-Y6-0fM"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="Xuq-LY-u25"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZX-51-rz0">
+                                        <rect key="frame" x="173" y="160" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="oTe-Cc-tH7">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="CaZ-h1-pBp"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="GBt-LY-qch"/>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-nB-lK0">
+                                        <rect key="frame" x="173" y="128" width="43" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="FIR-1O-KnZ">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="b7t-x8-ZCc"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="cLr-Sq-YwJ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
                                 <connections>
-                                    <action selector="sliderActionWithSender:" target="XfG-lQ-9wD" id="mgB-zQ-rzW"/>
+                                    <outlet property="blueDecimalField" destination="IXA-PR-4SZ" id="Oyb-b9-FJR"/>
+                                    <outlet property="blueFloatField" destination="Xw9-nB-lK0" id="lTh-IM-7Wc"/>
+                                    <outlet property="blueSlider" destination="rfd-ax-gSN" id="7KD-Mp-yWg"/>
+                                    <outlet property="greenDecimalField" destination="cW1-8X-TK9" id="DLE-Jx-bDt"/>
+                                    <outlet property="greenFloatField" destination="oZX-51-rz0" id="p0x-DZ-Phu"/>
+                                    <outlet property="greenSlider" destination="tE8-uR-ZsL" id="smb-rE-c25"/>
+                                    <outlet property="redDecimalField" destination="HJu-St-c8L" id="ELa-Lk-JNL"/>
+                                    <outlet property="redFloatField" destination="nrq-GG-ow2" id="wqZ-Sh-3x8"/>
+                                    <outlet property="redSlider" destination="paL-2l-03H" id="sFo-oc-UWk"/>
                                 </connections>
-                            </slider>
-                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-nJ-PKA">
-                                <rect key="frame" x="20" y="161" width="96" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="Uvd-UP-dXj"/>
-                                <connections>
-                                    <action selector="sliderActionWithSender:" target="XfG-lQ-9wD" id="asN-xl-0fg"/>
-                                </connections>
-                            </slider>
-                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D69-mx-ycF">
-                                <rect key="frame" x="20" y="129" width="96" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="iBK-Bl-jRs"/>
-                                <connections>
-                                    <action selector="sliderActionWithSender:" target="XfG-lQ-9wD" id="bUr-r3-Wym"/>
-                                </connections>
-                            </slider>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-Ke-vAO">
-                                <rect key="frame" x="122" y="192" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="z7w-Ab-HM5">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="decimalFieldActionWithSender:" target="XfG-lQ-9wD" id="DOH-Sg-nQm"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="zOu-UM-bPg"/>
-                                </connections>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-GF-lhe">
-                                <rect key="frame" x="122" y="160" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="KQI-lS-i2f">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="decimalFieldActionWithSender:" target="XfG-lQ-9wD" id="0ch-Hz-1cG"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="JJe-OC-jDI"/>
-                                </connections>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-7U-9k5">
-                                <rect key="frame" x="122" y="128" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Yab-Gl-YUH">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="decimalFieldActionWithSender:" target="XfG-lQ-9wD" id="Tvy-7x-7gc"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="pFr-Pl-K8D"/>
-                                </connections>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM3-1o-1h1">
-                                <rect key="frame" x="173" y="192" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="oNh-ao-uVJ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="floatFieldActionWithSender:" target="XfG-lQ-9wD" id="KMb-7o-8ti"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="J5Z-3I-AqS"/>
-                                </connections>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-fn-G2W">
-                                <rect key="frame" x="173" y="160" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="4hP-7m-ToS">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="floatFieldActionWithSender:" target="XfG-lQ-9wD" id="9zI-Si-MyK"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="RX6-KF-J4O"/>
-                                </connections>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-Ox-w7V">
-                                <rect key="frame" x="173" y="128" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="8NK-bu-gLT">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="floatFieldActionWithSender:" target="XfG-lQ-9wD" id="jyG-CQ-OxH"/>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="0VO-hW-57o"/>
-                                </connections>
-                            </textField>
+                            </view>
                         </subviews>
                     </view>
-                    <connections>
-                        <outlet property="blueDecimalField" destination="h0x-7U-9k5" id="lSL-LP-Atk"/>
-                        <outlet property="blueFloatField" destination="gLI-Ox-w7V" id="VqT-J5-XXW"/>
-                        <outlet property="blueSlider" destination="D69-mx-ycF" id="jvR-vc-Vwr"/>
-                        <outlet property="greenDecimalField" destination="Bqb-GF-lhe" id="7sF-rR-uLK"/>
-                        <outlet property="greenFloatField" destination="B0V-fn-G2W" id="bgK-b1-bzm"/>
-                        <outlet property="greenSlider" destination="0YL-nJ-PKA" id="0dJ-bL-5Zr"/>
-                        <outlet property="redDecimalField" destination="YzR-Ke-vAO" id="Vb1-vx-Ncf"/>
-                        <outlet property="redFloatField" destination="MM3-1o-1h1" id="vVx-cU-Cjj"/>
-                        <outlet property="redSlider" destination="ctK-Yi-d65" id="bOM-Iz-0Nk"/>
-                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
