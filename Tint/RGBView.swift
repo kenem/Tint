@@ -43,9 +43,6 @@ class RGBView: NSView {
                                                selector: #selector(updateColors(notification:)),
                                                name: .GlobalColorChangedNotification,
                                                object: nil)
-        
-        self.sliderAction(sender: redSlider!)
-
     }
     
     @IBAction func sliderAction(sender: NSSlider) {

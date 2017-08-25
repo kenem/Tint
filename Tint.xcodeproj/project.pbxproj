@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DCB2408F1F4FFE910077511E /* RGBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2408E1F4FFE910077511E /* RGBView.swift */; };
-		DCB240911F4FFEA20077511E /* CMYKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB240901F4FFEA20077511E /* CMYKView.swift */; };
 		DCB240931F4FFEF60077511E /* HSBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB240921F4FFEF60077511E /* HSBView.swift */; };
 		DCB6A4111F45A553003D37EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4101F45A553003D37EF /* AppDelegate.swift */; };
 		DCB6A4131F45A553003D37EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4121F45A553003D37EF /* ViewController.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		DCB2408E1F4FFE910077511E /* RGBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBView.swift; sourceTree = "<group>"; };
-		DCB240901F4FFEA20077511E /* CMYKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMYKView.swift; sourceTree = "<group>"; };
 		DCB240921F4FFEF60077511E /* HSBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBView.swift; sourceTree = "<group>"; };
 		DCB6A40D1F45A553003D37EF /* Tint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB6A4101F45A553003D37EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				DCB6A4101F45A553003D37EF /* AppDelegate.swift */,
 				DCB6A4121F45A553003D37EF /* ViewController.swift */,
 				DCB2408E1F4FFE910077511E /* RGBView.swift */,
-				DCB240901F4FFEA20077511E /* CMYKView.swift */,
 				DCB240921F4FFEF60077511E /* HSBView.swift */,
 				DCDE8C471F50135F003C842A /* Notifications.swift */,
 				DCB6A4141F45A553003D37EF /* Assets.xcassets */,
@@ -268,7 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDE8C481F50135F003C842A /* Notifications.swift in Sources */,
-				DCB240911F4FFEA20077511E /* CMYKView.swift in Sources */,
 				DCB2408F1F4FFE910077511E /* RGBView.swift in Sources */,
 				DCB6A4131F45A553003D37EF /* ViewController.swift in Sources */,
 				DCB6A4111F45A553003D37EF /* AppDelegate.swift in Sources */,

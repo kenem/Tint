@@ -694,7 +694,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="RGB" id="Gcb-0B-E2t">
                                             <font key="font" metaFont="system"/>
-                                            <color key="textColor" red="0.32459945480000002" green="0.66599583630000003" blue="0.27207693459999999" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.32544996533860004" green="0.66599583630000003" blue="0.27305829288300004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
@@ -729,6 +729,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="rHv-6l-VwU"/>
@@ -742,6 +745,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="ejI-fq-lbP"/>
@@ -755,6 +761,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="8wV-ZD-8EO"/>
@@ -768,6 +777,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="xot-Y6-0fM"/>
@@ -781,6 +793,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="CaZ-h1-pBp"/>
@@ -794,6 +809,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
                                             <action selector="floatFieldActionWithSender:" target="ItW-Qm-pp5" id="b7t-x8-ZCc"/>
@@ -813,14 +831,14 @@
                                     <outlet property="redSlider" destination="paL-2l-03H" id="sFo-oc-UWk"/>
                                 </connections>
                             </view>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJV-JS-59m" customClass="CMYKView" customModule="Tint" customModuleProvider="target">
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJV-JS-59m" customClass="HSBView" customModule="Tint" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="480" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B00-5k-3AR">
                                         <rect key="frame" x="18" y="100" width="96" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="2ZV-ah-WPO"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="359" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="2ZV-ah-WPO"/>
                                         <connections>
                                             <action selector="sliderActionWithSender:" target="kJV-JS-59m" id="ZpW-BW-uO9"/>
                                         </connections>
@@ -828,7 +846,7 @@
                                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-YI-hZ5">
                                         <rect key="frame" x="18" y="68" width="96" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="hTJ-27-bPB"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="hTJ-27-bPB"/>
                                         <connections>
                                             <action selector="sliderActionWithSender:" target="kJV-JS-59m" id="4Yu-V7-vMl"/>
                                         </connections>
@@ -836,17 +854,9 @@
                                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffu-cM-AlO">
                                         <rect key="frame" x="18" y="36" width="96" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="DWR-Wn-96r"/>
+                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="DWR-Wn-96r"/>
                                         <connections>
                                             <action selector="sliderActionWithSender:" target="kJV-JS-59m" id="loS-TT-oVP"/>
-                                        </connections>
-                                    </slider>
-                                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-bk-yld">
-                                        <rect key="frame" x="18" y="5" width="96" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="255" doubleValue="127" tickMarkPosition="above" sliderType="linear" id="1jn-Ro-sif"/>
-                                        <connections>
-                                            <action selector="sliderActionWithSender:" target="kJV-JS-59m" id="3Kf-aC-fkO"/>
                                         </connections>
                                     </slider>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jk-jW-Rth">
@@ -856,9 +866,12 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
-                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="Zme-Zr-ABd"/>
+                                            <action selector="decimalFieldActionWithSender:" target="kJV-JS-59m" id="Pyp-Q5-p0o"/>
                                             <outlet property="delegate" destination="XfG-lQ-9wD" id="YXS-Xw-QZx"/>
                                         </connections>
                                     </textField>
@@ -869,9 +882,12 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
-                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="EE9-6S-7fM"/>
+                                            <action selector="decimalFieldActionWithSender:" target="kJV-JS-59m" id="ZIF-TB-Oae"/>
                                             <outlet property="delegate" destination="XfG-lQ-9wD" id="Gqb-qR-FHG"/>
                                         </connections>
                                     </textField>
@@ -882,35 +898,40 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
-                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="qIm-YX-MdO"/>
+                                            <action selector="decimalFieldActionWithSender:" target="kJV-JS-59m" id="aPX-r5-084"/>
                                             <outlet property="delegate" destination="XfG-lQ-9wD" id="ul2-9M-Qqh"/>
                                         </connections>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miY-Kg-643">
-                                        <rect key="frame" x="120" y="3" width="43" height="22"/>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-HK-vve">
+                                        <rect key="frame" x="171" y="99" width="43" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="KX3-Cg-uxq">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Ggz-53-ceL">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
                                         </textFieldCell>
                                         <connections>
-                                            <action selector="decimalFieldActionWithSender:" target="ItW-Qm-pp5" id="HNo-BK-3NF"/>
-                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="gyV-i1-5ps"/>
+                                            <action selector="fractionFieldActionWithSender:" target="kJV-JS-59m" id="4Bt-qJ-osx"/>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="exJ-54-SOQ"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                                 <connections>
-                                    <outlet property="cField" destination="6jk-jW-Rth" id="mAj-3Y-Ruv"/>
-                                    <outlet property="cSlider" destination="B00-5k-3AR" id="IJp-pU-ScQ"/>
-                                    <outlet property="kField" destination="miY-Kg-643" id="naM-KR-VYG"/>
-                                    <outlet property="kSlider" destination="ooh-bk-yld" id="KJC-a3-1ma"/>
-                                    <outlet property="mField" destination="Sg5-Bw-fJP" id="Obz-nH-5MC"/>
-                                    <outlet property="mSlider" destination="ZL6-YI-hZ5" id="zdd-Xh-4Ox"/>
-                                    <outlet property="yField" destination="3fh-Tm-WfL" id="s5h-sa-gSm"/>
-                                    <outlet property="ySlider" destination="ffu-cM-AlO" id="niC-IE-vQG"/>
+                                    <outlet property="bPercentField" destination="3fh-Tm-WfL" id="QK4-iv-gWT"/>
+                                    <outlet property="bSlider" destination="ffu-cM-AlO" id="nEO-ae-RVd"/>
+                                    <outlet property="hDegreesField" destination="6jk-jW-Rth" id="4Uh-vs-Ml4"/>
+                                    <outlet property="hFractionField" destination="4Lt-HK-vve" id="1Ya-Xb-fZl"/>
+                                    <outlet property="hSlider" destination="B00-5k-3AR" id="Gfo-rT-Hy3"/>
+                                    <outlet property="sPercentField" destination="Sg5-Bw-fJP" id="mQK-Xj-tcz"/>
+                                    <outlet property="sSlider" destination="ZL6-YI-hZ5" id="Y2y-nM-gmb"/>
                                 </connections>
                             </customView>
                         </subviews>

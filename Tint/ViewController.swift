@@ -12,6 +12,14 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+    }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        NotificationCenter.default.post(name: .GlobalColorChangedNotification,
+                                        object: NSColor(red: 1, green: 1, blue: 1, alpha: 1))
     }
 
     override var representedObject: Any? {
