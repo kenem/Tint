@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB6A4111F45A553003D37EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4101F45A553003D37EF /* AppDelegate.swift */; };
+		DCB6A4131F45A553003D37EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4121F45A553003D37EF /* ViewController.swift */; };
+		DCB6A4151F45A553003D37EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB6A4141F45A553003D37EF /* Assets.xcassets */; };
+		DCB6A4181F45A553003D37EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB6A4161F45A553003D37EF /* Main.storyboard */; };
+		DCB6A4231F45A553003D37EF /* TintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A4221F45A553003D37EF /* TintTests.swift */; };
+		DCB6A42E1F45A553003D37EF /* TintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB6A42D1F45A553003D37EF /* TintUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCB6A41F1F45A553003D37EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB6A4051F45A552003D37EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB6A40C1F45A553003D37EF;
+			remoteInfo = Tint;
+		};
+		DCB6A42A1F45A553003D37EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB6A4051F45A552003D37EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB6A40C1F45A553003D37EF;
+			remoteInfo = Tint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCB6A40D1F45A553003D37EF /* Tint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB6A4101F45A553003D37EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCB6A4121F45A553003D37EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCB6A4141F45A553003D37EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB6A4171F45A553003D37EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCB6A4191F45A553003D37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB6A41E1F45A553003D37EF /* TintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB6A4221F45A553003D37EF /* TintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintTests.swift; sourceTree = "<group>"; };
+		DCB6A4241F45A553003D37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB6A4291F45A553003D37EF /* TintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB6A42D1F45A553003D37EF /* TintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintUITests.swift; sourceTree = "<group>"; };
+		DCB6A42F1F45A553003D37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB6A40A1F45A553003D37EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A41B1F45A553003D37EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A4261F45A553003D37EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB6A4041F45A552003D37EF = {
+			isa = PBXGroup;
+			children = (
+				DCB6A40F1F45A553003D37EF /* Tint */,
+				DCB6A4211F45A553003D37EF /* TintTests */,
+				DCB6A42C1F45A553003D37EF /* TintUITests */,
+				DCB6A40E1F45A553003D37EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB6A40E1F45A553003D37EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB6A40D1F45A553003D37EF /* Tint.app */,
+				DCB6A41E1F45A553003D37EF /* TintTests.xctest */,
+				DCB6A4291F45A553003D37EF /* TintUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB6A40F1F45A553003D37EF /* Tint */ = {
+			isa = PBXGroup;
+			children = (
+				DCB6A4101F45A553003D37EF /* AppDelegate.swift */,
+				DCB6A4121F45A553003D37EF /* ViewController.swift */,
+				DCB6A4141F45A553003D37EF /* Assets.xcassets */,
+				DCB6A4161F45A553003D37EF /* Main.storyboard */,
+				DCB6A4191F45A553003D37EF /* Info.plist */,
+			);
+			path = Tint;
+			sourceTree = "<group>";
+		};
+		DCB6A4211F45A553003D37EF /* TintTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB6A4221F45A553003D37EF /* TintTests.swift */,
+				DCB6A4241F45A553003D37EF /* Info.plist */,
+			);
+			path = TintTests;
+			sourceTree = "<group>";
+		};
+		DCB6A42C1F45A553003D37EF /* TintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB6A42D1F45A553003D37EF /* TintUITests.swift */,
+				DCB6A42F1F45A553003D37EF /* Info.plist */,
+			);
+			path = TintUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB6A40C1F45A553003D37EF /* Tint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB6A4321F45A553003D37EF /* Build configuration list for PBXNativeTarget "Tint" */;
+			buildPhases = (
+				DCB6A4091F45A553003D37EF /* Sources */,
+				DCB6A40A1F45A553003D37EF /* Frameworks */,
+				DCB6A40B1F45A553003D37EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tint;
+			productName = Tint;
+			productReference = DCB6A40D1F45A553003D37EF /* Tint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCB6A41D1F45A553003D37EF /* TintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB6A4351F45A553003D37EF /* Build configuration list for PBXNativeTarget "TintTests" */;
+			buildPhases = (
+				DCB6A41A1F45A553003D37EF /* Sources */,
+				DCB6A41B1F45A553003D37EF /* Frameworks */,
+				DCB6A41C1F45A553003D37EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB6A4201F45A553003D37EF /* PBXTargetDependency */,
+			);
+			name = TintTests;
+			productName = TintTests;
+			productReference = DCB6A41E1F45A553003D37EF /* TintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCB6A4281F45A553003D37EF /* TintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB6A4381F45A553003D37EF /* Build configuration list for PBXNativeTarget "TintUITests" */;
+			buildPhases = (
+				DCB6A4251F45A553003D37EF /* Sources */,
+				DCB6A4261F45A553003D37EF /* Frameworks */,
+				DCB6A4271F45A553003D37EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB6A42B1F45A553003D37EF /* PBXTargetDependency */,
+			);
+			name = TintUITests;
+			productName = TintUITests;
+			productReference = DCB6A4291F45A553003D37EF /* TintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB6A4051F45A552003D37EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Aspire;
+				TargetAttributes = {
+					DCB6A40C1F45A553003D37EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DCB6A41D1F45A553003D37EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCB6A40C1F45A553003D37EF;
+					};
+					DCB6A4281F45A553003D37EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCB6A40C1F45A553003D37EF;
+					};
+				};
+			};
+			buildConfigurationList = DCB6A4081F45A552003D37EF /* Build configuration list for PBXProject "Tint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCB6A4041F45A552003D37EF;
+			productRefGroup = DCB6A40E1F45A553003D37EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB6A40C1F45A553003D37EF /* Tint */,
+				DCB6A41D1F45A553003D37EF /* TintTests */,
+				DCB6A4281F45A553003D37EF /* TintUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB6A40B1F45A553003D37EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB6A4151F45A553003D37EF /* Assets.xcassets in Resources */,
+				DCB6A4181F45A553003D37EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A41C1F45A553003D37EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A4271F45A553003D37EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB6A4091F45A553003D37EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB6A4131F45A553003D37EF /* ViewController.swift in Sources */,
+				DCB6A4111F45A553003D37EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A41A1F45A553003D37EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB6A4231F45A553003D37EF /* TintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB6A4251F45A553003D37EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB6A42E1F45A553003D37EF /* TintUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB6A4201F45A553003D37EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB6A40C1F45A553003D37EF /* Tint */;
+			targetProxy = DCB6A41F1F45A553003D37EF /* PBXContainerItemProxy */;
+		};
+		DCB6A42B1F45A553003D37EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB6A40C1F45A553003D37EF /* Tint */;
+			targetProxy = DCB6A42A1F45A553003D37EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCB6A4161F45A553003D37EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB6A4171F45A553003D37EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCB6A4301F45A553003D37EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCB6A4311F45A553003D37EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		DCB6A4331F45A553003D37EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.Tint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCB6A4341F45A553003D37EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.Tint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DCB6A4361F45A553003D37EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.TintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tint.app/Contents/MacOS/Tint";
+			};
+			name = Debug;
+		};
+		DCB6A4371F45A553003D37EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.TintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tint.app/Contents/MacOS/Tint";
+			};
+			name = Release;
+		};
+		DCB6A4391F45A553003D37EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.TintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tint;
+			};
+			name = Debug;
+		};
+		DCB6A43A1F45A553003D37EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.myers.TintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB6A4081F45A552003D37EF /* Build configuration list for PBXProject "Tint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB6A4301F45A553003D37EF /* Debug */,
+				DCB6A4311F45A553003D37EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB6A4321F45A553003D37EF /* Build configuration list for PBXNativeTarget "Tint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB6A4331F45A553003D37EF /* Debug */,
+				DCB6A4341F45A553003D37EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB6A4351F45A553003D37EF /* Build configuration list for PBXNativeTarget "TintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB6A4361F45A553003D37EF /* Debug */,
+				DCB6A4371F45A553003D37EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB6A4381F45A553003D37EF /* Build configuration list for PBXNativeTarget "TintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB6A4391F45A553003D37EF /* Debug */,
+				DCB6A43A1F45A553003D37EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB6A4051F45A552003D37EF /* Project object */;
+}
