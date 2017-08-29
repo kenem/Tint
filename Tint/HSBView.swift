@@ -21,12 +21,9 @@ class HSBView: NSView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let degreesFormatter = NumberFormatter()
-        degreesFormatter.positiveSuffix = "º"
-        hDegreesField?.cell?.formatter = degreesFormatter
-        
         let percentFormatter = NumberFormatter()
         percentFormatter.numberStyle = .percent
+        percentFormatter.percentSymbol = ""
         sPercentField?.cell?.formatter = percentFormatter
         bPercentField?.cell?.formatter = percentFormatter
         
