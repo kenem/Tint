@@ -26,7 +26,7 @@ class HSBView: NSView {
         hDegreesField?.cell?.formatter = degreesFormatter
         
         let percentFormatter = NumberFormatter()
-        percentFormatter.positiveSuffix = "%"
+        percentFormatter.numberStyle = .percent
         sPercentField?.cell?.formatter = percentFormatter
         bPercentField?.cell?.formatter = percentFormatter
         
@@ -61,26 +61,26 @@ class HSBView: NSView {
             sSlider?.integerValue = Int(color.saturationComponent * 100.0)
             bSlider?.integerValue = Int(color.brightnessComponent * 100.0)
             
-            hDegreesField?.integerValue = Int(color.hueComponent * 360.0)
-            sPercentField?.integerValue = Int(color.saturationComponent * 100.0)
-            bPercentField?.integerValue = Int(color.brightnessComponent * 100.0)
+            hDegreesField?.floatValue = Float(color.hueComponent) * 360.0
+            sPercentField?.floatValue = Float(color.saturationComponent)
+            bPercentField?.floatValue = Float(color.brightnessComponent)
             
             hFractionField?.floatValue = Float(color.hueComponent)
         }
     }
     
     @IBAction func decimalFieldAction(sender: NSTextField) {
-        let newColor = NSColor(hue: CGFloat(hDegreesField!.integerValue) / 360.0,
-                               saturation: CGFloat(sPercentField!.integerValue) / 100.0,
-                               brightness: CGFloat(bPercentField!.integerValue) / 100.0,
+        let newColor = NSColor(hue: CGFloat(hDegreesField!.floatValue) / 360.0,
+                               saturation: CGFloat(sPercentField!.floatValue),
+                               brightness: CGFloat(bPercentField!.floatValue),
                                alpha: 1)
         NotificationCenter.default.post(name: .GlobalColorChangedNotification, object: newColor)
     }
 
     @IBAction func fractionFieldAction(sender: NSTextField) {
         let newColor = NSColor(hue: CGFloat(hFractionField!.floatValue),
-                               saturation: CGFloat(sPercentField!.integerValue) / 100.0,
-                               brightness: CGFloat(bPercentField!.integerValue) / 100.0,
+                               saturation: CGFloat(sPercentField!.floatValue),
+                               brightness: CGFloat(bPercentField!.floatValue),
                                alpha: 1)
         NotificationCenter.default.post(name: .GlobalColorChangedNotification, object: newColor)
     }
