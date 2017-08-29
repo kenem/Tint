@@ -686,7 +686,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <view wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-Qm-pp5" customClass="RGBView" customModule="Tint" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="302" width="480" height="178"/>
+                                <rect key="frame" x="0.0" y="302" width="257" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wC-FT-fHq">
@@ -942,7 +942,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIN-T1-bKc">
-                                        <rect key="frame" x="163" y="36" width="20" height="20"/>
+                                        <rect key="frame" x="163" y="35" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%" id="9rh-RY-yce">
                                             <font key="font" metaFont="system"/>
@@ -959,6 +959,44 @@
                                     <outlet property="hSlider" destination="B00-5k-3AR" id="Gfo-rT-Hy3"/>
                                     <outlet property="sPercentField" destination="Sg5-Bw-fJP" id="mQK-Xj-tcz"/>
                                     <outlet property="sSlider" destination="ZL6-YI-hZ5" id="Y2y-nM-gmb"/>
+                                </connections>
+                            </customView>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ3-Bc-k9Q" customClass="SwatchView" customModule="Tint" customModuleProvider="target">
+                                <rect key="frame" x="265" y="302" width="215" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewh-c2-Pfv">
+                                        <rect key="frame" x="26" y="82" width="163" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-Ru-2Pp">
+                                        <rect key="frame" x="39" y="30" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="#" id="bex-r5-QfT">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXs-ZW-nn0">
+                                        <rect key="frame" x="59" y="30" width="96" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="J70-eJ-wbF">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="fieldActionWithSender:" target="iZ3-Bc-k9Q" id="39r-Y7-QJH"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <connections>
+                                    <outlet property="colorSwatch" destination="ewh-c2-Pfv" id="35I-Xj-F5r"/>
+                                    <outlet property="hexRGBField" destination="iXs-ZW-nn0" id="BLL-bn-wdr"/>
                                 </connections>
                             </customView>
                         </subviews>
