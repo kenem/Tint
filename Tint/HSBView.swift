@@ -49,10 +49,10 @@ class HSBView: NSView {
     }
     
     func textDidChange(_ notification: Notification) {
-        self.print("NOTI \(notification)")
+        self.printView("NOTI \(notification)")
     }
     
-    func updateColors(notification: Notification) {
+    @objc func updateColors(notification: Notification) {
         if let color = notification.object as? NSColor {
             hSlider?.integerValue = Int(color.hueComponent * 360.0)
             sSlider?.integerValue = Int(color.saturationComponent * 100.0)
