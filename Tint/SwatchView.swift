@@ -22,7 +22,7 @@ class SwatchView: NSView {
                                                object: nil)
     }
 
-    func updateColors(notification: Notification) {
+    @objc func updateColors(notification: Notification) {
         if let color = notification.object as? NSColor {
             colorSwatch?.layer?.backgroundColor = color.cgColor
             hexRGBField?.cell?.stringValue = String(format: "%02X%02X%02X",

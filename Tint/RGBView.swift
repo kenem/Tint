@@ -53,10 +53,10 @@ class RGBView: NSView {
     }
     
     func textDidChange(_ notification: Notification) {
-        self.print("NOTI \(notification)")
+        self.printView("NOTI \(notification)")
     }
     
-    func updateColors(notification: Notification) {
+    @objc func updateColors(notification: Notification) {
         if let color = notification.object as? NSColor {
             redSlider?.integerValue = Int(color.redComponent * 255.0)
             greenSlider?.integerValue = Int(color.greenComponent * 255.0)
